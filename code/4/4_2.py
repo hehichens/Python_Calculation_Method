@@ -21,16 +21,15 @@ def Aitken(X, v, N = 100, eps=1e-9):
     return a[-1], v, i
 
 # =============================================================================
-# # 测试用例
-# A = np.array([[ 2,  3,  2],
-#         [10,  3,  4],
-#         [ 3,  6,  1]])
-# v = np.array([0, 0, 1])
-# 
-# a, v, i = Aitken(A, v)
-# print("eig value:", a)
-# print("eig vector:", v)
-# print("times:", i)
+ # 测试用例
+A = np.array([[ 7,  3,  -2],
+         [3,  4, -1],
+         [ -2,  -1,  3]])
+v = np.array([0, 0, 1])
+ 
+a, v, i = Aitken(A, v)
+print("eig value:", a)
+print("eig vector:", v)
+print("times:", i)
 # =============================================================================
             
-        
